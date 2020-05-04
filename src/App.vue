@@ -56,7 +56,7 @@ export default {
   setup() {
     // creating an instance of Clarifai 
     const app = new Clarifai.App({
-    apiKey: '6d0b41b28c784f46a39b27afee249e22'
+    apiKey: 'YOUR API KEY'
     });
 
     const state = reactive({
@@ -84,10 +84,10 @@ export default {
 
     }
   
-  const listFood = (data) =>{
-    console.log(data)
-    state.foodContents = data;
-  }
+    const listFood = (data) =>{
+      console.log(data)
+      state.foodContents = data;
+    }
 
     const incrementRank = () => {
       state.rank++
